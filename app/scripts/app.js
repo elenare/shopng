@@ -8,7 +8,7 @@
  *
  * Main module of the application.
  */
-angular
+var shopngApp = angular
   .module('shopngApp', [
     'ngAnimate',
     'ngCookies',
