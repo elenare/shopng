@@ -9,5 +9,8 @@
  */
 angular.module('shopngApp')
   .controller('MainCtrl', function ($scope) {
-  	//$scope.item = 'ok';
+  	$scope.searchItem = function() {
+  		$scope.result = $scope.input;
+  		$scope.input = '';
+  	};
   });
