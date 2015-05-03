@@ -1,13 +1,16 @@
 'use strict';
 
-shopngApp.factory('katalogService', function($resource) {
+//mit Factory
+/*shopngApp.factory('katalogService', function($resource) {
 
     return $resource('https://localhost:8443/shop/rest/katalog', {bezeichnung:'@bezeichnung'}, {
       query: {method:'GET', params:{bezeichnung:'Tisch'}, isArray:true},
       search: {method:'GET', params:{bezeichnung:'@bezeichnung'}, isArray:true}
     });	
 
-
+/*
+*	
+*/
 
 //	return {
 
@@ -27,4 +30,15 @@ shopngApp.factory('katalogService', function($resource) {
 
 
 //	};
+//21.04
+//});
+
+//mit Service
+shopngApp.service('katalogService', function($resource){
+
+    return $resource('https://localhost:8443/shop/rest/katalog', {bezeichnung:'@bezeichnung'}, {
+      query: {method:'GET', params:{bezeichnung:'Tisch'}, isArray:true},
+      search: {method:'GET', params:{bezeichnung:'@bezeichnung'}, isArray:true}
+    });	
+
 });

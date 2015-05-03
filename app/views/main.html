@@ -10,15 +10,24 @@
       </div>
       <br>
       <div>
-
-
       </div>
     </div>
   </form>    
   </p>
   
-<p class="input-group" ng-repeat="result in results">
-    id: {{result.id}}
+<!--<p class="input-group" ng-repeat="result in results">-->
+<p>
+<h5>Ergebnissen in: {{searchword}}</h5>
+  <div class="panel panel-primary" ng-repeat="result in results">
+    <div class="panel-heading">Bezeichnung: {{result.bezeichnung}}</div>
+    <div class="panel-body">
+      <h6>Artikel ID: {{result.id}}</h6>
+      <h6>Preis: {{result.preis}} €</h6>
+      <h6>Rating: {{result.rating}}</h6>
+    </div>
+  </div>
+  
+    <!--id: {{result.id}}, bezeichnung: {{result.bezeichnung}}-->
 </p>
 
 </div>

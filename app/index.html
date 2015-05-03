@@ -20,15 +20,26 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
+
     <!-- Add your site or application content here -->
     <div class="container">
       <div class="header">
-        <ul class="nav nav-pills pull-right">
+        <ul class="nav nav-pills pull-left">
           <li class="active"><a ng-href="#">Home</a></li>
-          <li><a ng-href="#/about">About</a></li>
-          <li><a ng-href="#/contact">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">shopng</h3>
+          <li><a ng-href="#/about">Über Projekt</a></li>
+          <li><a ng-href="#/contact">Kontakt</a></li>
+          
+        </ul> 
+        <ul class="nav nav-pills pull-right">
+          <li><div class="form-group">
+              <input type="text" class="form-control" name="username" placeholder="Username">
+           </div></li>
+           <li> <div class="form-group">
+               <input type="text" class="form-control" name="password" placeholder="Password">
+            </div></li>
+           <li> <button type="submit" class="btn btn-default">LogIn</button></li>
+           </ul><p></p>
+        <h3 class="text-muted">HSKa Shop</h3>
       </div>
 
       <div ng-view=""></div>
